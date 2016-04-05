@@ -1,0 +1,493 @@
+/*   
+Theme Name: Ineo Builders
+Theme URI: http://ineobuilders.com
+Description: Custom Commercial & Residential
+Author: Joshua Blankenship
+Author URI: http://joshuablankenship.com
+Version: 1.0
+*/
+
+/* RESETS */
+
+*, html, div, span, object, iframe,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, img, figure, figcaption,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	}
+
+.clear { 
+	clear: both;
+}
+	
+.clearfix:after { 
+	clear: both; 
+	content: '.'; 
+	display: block;
+	height: 0;
+	visibility: hidden;
+	}
+	
+.clearfix { 
+	display: inline-block;
+}
+
+* html.clearfix { height: 1% }
+
+.clearfix { 
+	display: block;
+}
+
+* {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased; 
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	}
+
+body {
+	font-family: Gotham;
+}
+
+a, a:visited, a:hover { text-decoration: none; }
+
+.centered {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* NAVIGATION */
+
+nav { 
+	background: #303030;
+	padding: 3% 2%;
+    height: 6%;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+nav ul { 
+	text-align: center; 
+}
+
+nav ul li { 
+	display: inline-block; 
+	font-size: 17px;
+	font-weight: 500;
+	float: right;
+	letter-spacing: 1px;
+	line-height: 30px;
+	margin: 2% 2% 1% 2%;
+	padding: 0;
+}
+
+/* ALL CSS LOGO */
+nav ul li:first-of-type { 
+	color: #fff;
+	font-size: 50px;
+	font-weight: 300;
+	float: left;
+	letter-spacing: 8px;
+	margin-top: 1%;
+	text-align: center;
+}
+
+nav ul li:first-of-type a {
+	color: #fff;
+} 
+
+#homepage nav ul li:first-of-type a { 
+	color: #303030;
+}
+
+nav ul li:first-of-type em {
+	font-style: normal;
+	letter-spacing: 0;
+	padding-top: 4px;
+}
+
+/* MACRON HACK */
+nav ul li:first-of-type em:after {
+	color: #f85d05;
+	content : "\2013\2013";
+	display: block;
+	letter-spacing: -15px;
+	position: relative;
+	right: -49px;
+	top: -60px;
+	height: 0;
+	}
+
+nav ul li:first-of-type span {
+	color: #beb173;
+	display: block;
+	font-size: 24px;
+	font-weight: 500;
+	margin-top: 12px;
+	letter-spacing: 3px;
+}
+
+nav a { 
+	color: #beb173;
+}
+
+nav a:hover {
+	color: #f85d05;
+}
+
+.youarehere { 
+	color: #f85d05; 
+	font-weight: 700;
+}
+
+/* HOMEPAGE */
+
+#homepage {
+	-webkit-box-shadow: inset 0 400px 400px -400px #000;
+    -moz-box-shadow: inset 0 400px 400px -400px #000;
+    box-shadow: inset 0 400px 400px -400px #000;
+    height: 100%;
+}
+
+#homepage figure { 
+	z-index: 0;
+}
+
+#homepage figure img {
+	width: 100%; 
+	position: absolute;
+	overflow: hidden;
+}
+
+#homepage nav { 
+	background: #fff;
+	position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 21%;
+}
+
+/* ABOUT PAGE */
+
+#about header { display: none; }
+
+#about h2 { 
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 300;
+	color: #f85d05;
+	line-height: 70px;
+	margin-bottom: 30px;
+}
+
+#about h3 { 
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	color: #303030;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#about section { 
+	margin: 100px auto;
+	width: 75%; 
+	max-width: 1000px;
+}
+
+#about div:nth-child(1) {
+	float: right;
+	max-width: 68%; 
+	margin-left: 5%;
+}
+
+#about div:nth-child(2) {
+	float: left;
+	max-width: 27%; 
+}
+
+#about div p a { 
+	color: #f85d05;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+
+#about div:nth-child(2) img:first-of-type { 
+	border-radius: 50%;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+#about div:nth-child(2) img:nth-child(2) {
+	margin-top: -75px;
+	width: 100%;
+	opacity: .75;
+}
+
+#about hr {
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+
+#about p {
+	font-family: Alegreya, Georgia, serif;
+	font-weight: normal;
+	font-size: 20px;
+	letter-spacing: 0;
+	line-height: 30px;
+	margin-bottom: 30px;
+	width: 95%;
+}
+
+#about p.intro {
+	font-size: 25px;
+	letter-spacing: 0;
+	line-height: 35px;
+	margin-bottom: 35px;
+	width: 100%;
+}
+
+#about div:nth-child(2) p { 
+	margin-top: -35px;
+	color: #303030;
+	font-family: Gotham, sans-serif; 
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#about div:nth-child(2) p em {
+	color: #303030;
+	display: block;
+	font-size: 18px;
+	font-family: Alegreya, Georgia, serif;
+	font-weight: normal;
+	text-transform: none;
+	opacity: .75;
+}
+
+
+a.cta {
+	background: transparent;
+	border: 3px solid #ddd;
+	border-radius: 30px;
+	color: #ccc;
+	display: block; 
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 0;
+	margin: 0;
+	padding: 20px 25px 19px;
+	text-transform: uppercase;
+}
+
+#about div:nth-child(2) table { 
+	border-top: 1px solid #ccc;
+	color: #303030;
+	margin: 89px 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#about div:nth-child(2) table a {
+	color: #f85d05;
+}
+
+#about div:nth-child(2) table tbody tr { 
+	border-bottom: 1px solid #ccc;
+}
+
+#about div:nth-child(2) table tbody td {
+		padding: 20px 0 18px;
+	}
+
+#about div:nth-child(2) table tbody tr td:nth-child(2) {
+	text-align: right; 
+}
+
+footer { 
+	background: #303030; 
+	color: #beb173;
+	margin: 0 auto;
+	text-align: center;
+	padding: 100px 0;
+	}
+
+footer ul { 
+	text-align: center; 
+}
+
+footer ul li { 
+	display: inline-block; 
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 30px;
+	margin: 0 10px;
+	padding: 0;
+}
+
+footer ul li:nth-child(n+4) { 
+	display: block;
+}
+
+footer ul li:nth-child(5) { 
+	color: #606060;
+	margin-top: 30px;
+	font-size: 80%;
+	text-transform: uppercase;
+}
+
+footer a { 
+	color: #beb173;
+}
+
+footer a:hover {
+	color: #f85d05;
+}
+
+/* SUBPAGES */
+
+.subpage section {
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+.subpage section:first-of-type { 
+}
+
+.subpage section figure {
+	float: left;
+	width: 50%;
+}
+
+.subpage section figure span {
+	display: block;
+	padding-bottom: 90px;
+}
+
+.subpage section figure:nth-child(3n+1) {
+	width: 100%;
+}
+
+.subpage section figure img { 
+	background: #f85d05;
+	width: 100%; 
+}
+
+.subpage section figure a img:hover {
+	opacity: .5;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.subpage h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 300;
+	color: #f85d05;
+	line-height: 60px;
+	margin: 90px auto 0;
+}
+
+.subpage section h2 { 
+	color: #ccc;
+	font-family: Alegreya, Georgia, serif;
+	font-size: 50px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: -1px;
+	line-height: 60px;
+	margin: 60px auto 70px;	
+	text-align: center;
+	width: 90%;
+	}
+
+.subpage section h2 a { 
+	border-bottom: 2px dotted #ccc;
+	color: #ccc;
+}
+
+.subpage section h2 a:hover { 
+	border-bottom: 2px dotted #f85d05;
+	color: #f85d05;
+}
+
+
+.subpage figure h3, 
+.subpage figure a {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.subpage figure h3 {
+	font-size: 25px;
+	font-weight: 500;
+	margin: 30px auto 5px; 
+}
+
+.subpage figure a {
+	color: #f85d05;
+	display: block;
+}
+
+.subpage figure a:hover {
+	color: #aaa; 
+}
+
+.subpage section a.mynameisurl {
+	color: #f85d05;
+	display: block;
+	font-size: 45px;
+	font-weight: 300;
+	line-height: 45px;
+	margin: 90px auto;
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+
+.subpage section a:hover.mynameisurl {
+	color: #303030;
+}
+
+#contactform label {
+	color: #303030;
+	font-size: 20px;
+}
+
+#contactform td {
+	padding: 15px 0;
+}
+
+#contactform input {
+	width: 100%;
+	display: block;
+	border: 1px solid #ccc;
+	height: 30px;
+	padding: 15px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
+
+#contactform textarea {
+	width: 100%;
+	display: block;
+	border: 1px solid #ccc;
+	height: 200px;
+	padding: 15px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
