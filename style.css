@@ -366,6 +366,7 @@ footer a:hover {
 }
 
 .subpage section figure {
+	padding: 10px;
 	float: left;
 	width: 50%;
 }
